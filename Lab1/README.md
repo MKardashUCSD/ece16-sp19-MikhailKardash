@@ -90,3 +90,7 @@ void loop() {
 1.  *The goal of this objective is to set up a github account and familiarize students with the assignment submission process.*
 
 2.  *The link to the repository is* https://github.com/MKardashUCSD/ece16-sp19-MikhailKardash
+
+## Conclusion
+
+*This lab introduced the tools that will be used in the course. I was successfully able to install the required software, use it to achieve the objectives, and upload the results to github.*
