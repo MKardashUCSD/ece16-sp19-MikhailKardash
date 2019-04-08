@@ -20,9 +20,9 @@ A12183302
 
 2. *I successfully performed the soldering tasks.*
 
-![Solder1](Images/Solder1.jpeg)
+![Solder1](Images/Solder1.jpg)
 
-![Solder2](Images/Solder2.jpeg)
+![Solder2](Images/Solder2.jpg)
 
 ## Objective 2
 
@@ -30,15 +30,15 @@ A12183302
 
 2. *The terminal outputs the following:*
 
-![Terminal](Images/Terminal.jpeg)
+![Terminal](Images/Terminal.jpg)
 
 3. *Running the file results in the following:*
 
-![Spyder](Images/Spyder1.jpeg)
+![Spyder](Images/Spyder1.jpg)
 
 4. *Running line by line results in the following:*
 
-![Spyder2](Images/Spyder2.jpeg)
+![Spyder2](Images/Spyder2.jpg)
 
 ## Objective 3
 
