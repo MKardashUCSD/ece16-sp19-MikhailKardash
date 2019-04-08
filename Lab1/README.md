@@ -30,15 +30,15 @@ A12183302
 
 2. *The terminal outputs the following:*
 
-![Terminal](Images/Terminal.jpg)
+![Terminal](Images/Terminal.JPG)
 
 3. *Running the file results in the following:*
 
-![Spyder](Images/Spyder1.jpg)
+![Spyder](Images/Spyder1.JPG)
 
 4. *Running line by line results in the following:*
 
-![Spyder2](Images/Spyder2.jpg)
+![Spyder2](Images/Spyder2.JPG)
 
 ## Objective 3
 
