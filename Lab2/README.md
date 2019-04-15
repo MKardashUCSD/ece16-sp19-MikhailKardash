@@ -14,7 +14,7 @@ A12183302
 
 2. *I implemented the circuit and ran the script. Below is a screenshot of the AT commands I ran.*
 
-![Objective1](Images/objective1.jpg)
+![Objective1](Images/objective1.JPG)
 
 ## Objective 2
 
@@ -22,9 +22,9 @@ A12183302
 
 2. *I partnered up with the student next to me. The two following screnshots show that I was able to complete this objective.*
 
-![Objective2a](Images/objective2a.jpg)
+![Objective2a](Images/objective2a.JPG)
 
-![Objective2b](Images/objective2b.jpg)
+![Objective2b](Images/objective2b.JPG)
 
 ## Objective 3
 
@@ -43,3 +43,7 @@ A12183302
 1. *The objective of this lab is to integrate the new LED circuit with an external breadboard circuit in order to create a stopwatch.*
 
 2. *I was able to run the stopwatch as seen in this video: https://youtu.be/adz9muY_Jsc*
+
+## Conclusion
+
+*Despite some slight hiccups in objective 3, I was able to complete all of the required tasks. This lab was a good introduction to prototyping a system and was also an introductoin to Bluetooth module commands.*
