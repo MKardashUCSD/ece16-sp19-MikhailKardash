@@ -1,8 +1,8 @@
 # Team Members
 
-*Primary: Mikhail Kardash*
+*Mikhail Kardash     Primary     A12183302*
 
-*Julian Salazar*
+*Julian Salazar     Secondary    A13809925*
 
 # Team Name
 
