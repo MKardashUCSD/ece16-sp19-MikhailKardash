@@ -37,7 +37,7 @@ A12183302
 
 2. *I was able to complete this objective. See the file and the image below. I coded the read_flag variable to always be the opposite of the write_flag variable.*
 
-![Objective4](Images/Objective4.JPG)
+![Objective4](Images/Objective4.jpg)
 
 ## Conclusion
 
