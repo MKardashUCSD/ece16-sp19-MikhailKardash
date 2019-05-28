@@ -48,7 +48,7 @@ b. *For the pedometer, the feature extraction needs to be redone. Instead of the
 
 2. *See the following image of the soldered vibration module.*
 
-[!vibrate](Images/vibrate.jpg)
+![vibrate](Images/vibrate.jpg)
 
 ## Conclusion
 
