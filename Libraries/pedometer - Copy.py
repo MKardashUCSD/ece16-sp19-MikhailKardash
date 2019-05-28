@@ -3,7 +3,6 @@ import numpy as np
 from Libraries.ListBuffer import ListBuffer
 from statistics import mean
 from math import ceil
-import scipy.signal as ss
 
 
 class Pedometer:
@@ -23,10 +22,6 @@ class Pedometer:
 			oof[j] = max(imu[i:i+10])
 		# Return the average of these maxima
 		result = mean(oof)
-		
-		#f, Pxx_den = ss.welch(imu,20)
-		#result = np.argmax(Pxx_den)
-		
 		return result
 	
 	
@@ -58,6 +53,7 @@ class Pedometer:
 		# For both the active and the inactive set, split the features 50/50 into a training set and a validation set
 		# The result will be an array of num_window//2 features for the active training set,
 		# num_window//2 features for the active validation set, and something similar for the inactive set
+		
 		train_act = active_features[0:ceil(len(active_features)/2)]
 		val_act = active_features[ceil(len(active_features)/2):len(active_features)]
 		train_inact = inactive_features[0:ceil(len(inactive_features)/2)]
@@ -78,7 +74,7 @@ class Pedometer:
 		Y = np.asarray([1]*len(train_act) + [0]*len(train_inact)) 
 		#Y = Y.reshape(-1,1)
 		# Instantiate KNN
-		knn = KNN(n_neighbors = 3, weights = 'distance')
+		knn = KNN(weights = 'distance')
 		
 		# Train the KNN with X and Y
 		knn.fit(X,Y)
@@ -109,38 +105,31 @@ class Pedometer:
 		return knn
 
 
-	def process(self, t_data, imu_data):
-
-        # Return if we don't have enough data yet or were not given enough data
-		if len(t_data) < self.window_length:
-			return self.steps
-
-        # Slice into just one window
-		t = t_data[-self.window_length:]
-		imu = imu_data[-self.window_length:]
-        # Use the KNN to determine if the instantaneous state is active or inactive
-        # call self.is_active(...)
-        # Implement your own step counter heuristic
-        # You can create new functions if you want
-		if (self.is_active(t_data,imu_data)):
-			time_elapsed = t[-1] - t[0]
-			f,Pxx_den = ss.welch(imu,20)
-			index = np.argmax(Pxx_den)
-			if (f[index] < 4):
-				self.steps = self.steps + f[index]
-
-		return self.steps
+# def process(self, t_data, imu_data):
 #
-	def is_active(self, t, imu):
-
-     # Extract features for KNN
-     # call self.extract_features(...)
-		features = self.extract_features(t,imu)
-            
-     # Classify using KNN
-		result = bool(self.knn.predict(features.reshape(-1,1)))
-		#print(result)
-            
-     # Return the result (labels) of the classification
-		return result
+#     # Return if we don't have enough data yet or were not given enough data
+#     if len(t) < self.window_length:
+#         return self.steps
+#            
+#     # Slice into just one window
+#     t = t_data[-self.window_length:]
+#     imu = imu_data[-self.window_length:]
+#
+#     # Use the KNN to determine if the instantaneous state is active or inactive
+#     # call self.is_active(...)
+#
+#     # Implement your own step counter heuristic
+#     # You can create new functions if you want
+#
+#     return self.steps
+#
+# def is_active(self, t, imu):
+#
+#     # Extract features for KNN
+#     # call self.extract_features(...)
+#            
+#     # Classify using KNN
+#            
+#     # Return the result (labels) of the classification
+#     return result
 #
